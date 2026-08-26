@@ -3,28 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrainIQ</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap">
+<title>دعم BrainIQ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 <style>
-:root{--bg:#F4F3EE;--card:#fff;--ink:#15213A;--ink2:#5C6884;--accent:#DE4429;--hair:#E2E0D6}
-@media (prefers-color-scheme:dark){:root{--bg:#0D1421;--card:#161F33;--ink:#E9E8E0;--ink2:#94A0BE;--accent:#FF6B52;--hair:#2A3450}}
+:root{--bg:#F4F3EE;--card:#fff;--ink:#15213A;--ink2:#5C6884;--accent:#DE4429;--hair:#E2E0D6;--soft:#F2F0E8}
+@media (prefers-color-scheme:dark){:root{--bg:#0D1421;--card:#161F33;--ink:#E9E8E0;--ink2:#94A0BE;--accent:#FF6B52;--hair:#2A3450;--soft:#0F1728}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;
-  display:grid;place-items:center;min-height:100vh;padding:32px;line-height:1.8}
-.card{background:var(--card);border:1px solid var(--hair);border-radius:20px;padding:40px 34px;max-width:460px;text-align:center}
-.mark{font-weight:700;font-size:34px;letter-spacing:-.03em;direction:ltr;margin-bottom:6px}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.85;
+  display:grid;place-items:center;min-height:100vh;padding:28px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:22px;
+  padding:38px 32px;max-width:520px;width:100%}
+.mark{font-weight:700;font-size:32px;letter-spacing:-.03em;direction:ltr;text-align:center}
 .mark span{color:var(--accent)}
-p{color:var(--ink2);margin:0 0 26px}
-a{display:inline-block;color:var(--accent);text-decoration:none;font-weight:600;
-  border:1px solid var(--accent);border-radius:12px;padding:11px 26px}
-a:hover{background:var(--accent);color:var(--card)}
+.tag{color:var(--ink2);text-align:center;margin:2px 0 26px;font-size:15px}
+h2{font-size:16px;font-weight:700;margin:0 0 10px}
+.box{background:var(--soft);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.box p{margin:0;font-size:14.5px;color:var(--ink2)}
+.box p+p{margin-top:8px}
+a{color:var(--accent);font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline}
+.mail{display:block;font-size:17px;margin-top:4px;direction:ltr;text-align:right}
+.links{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.links a{flex:1;text-align:center;border:1px solid var(--hair);border-radius:12px;
+  padding:11px 14px;font-size:14.5px;color:var(--ink);font-weight:500}
+.links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+footer{text-align:center;color:var(--ink2);font-size:12.5px;margin-top:24px}
 </style>
 </head>
 <body>
   <div class="card">
     <div class="mark">Brain<span>IQ</span></div>
-    <p>مِسبار قياس الذكاء — اختبار قدرات عقلية لأجهزة iPhone</p>
-    <a href="privacy/">سياسة الخصوصية</a>
+    <p class="tag">مِسبار قياس الذكاء — اختبار قدرات عقلية لأجهزة iPhone</p>
+
+    <h2>تواصل معنا</h2>
+    <div class="box">
+      <p>لأي سؤال أو مشكلة أو اقتراح، راسلنا وسنرد خلال 48 ساعة:</p>
+      <a class="mail" href="mailto:mhalsuwaidii@gmail.com">mhalsuwaidii@gmail.com</a>
+    </div>
+
+    <h2>أسئلة شائعة</h2>
+    <div class="box">
+      <p><strong>هل النتيجة تقييم معتمد؟</strong><br>
+      لا. النتيجة تقديرية للتسلية والتحدي الذهني، وليست تشخيصاً نفسياً. الاختبارات
+      المعتمدة تُجرى عند مختص مؤهل.</p>
+      <p><strong>هل يعمل بدون إنترنت؟</strong><br>
+      نعم، الاختبار كامل يعمل دون اتصال. الإنترنت مطلوب فقط لعرض الإعلانات ولوحة الصدارة.</p>
+      <p><strong>كيف أظهر في لوحة الصدارة؟</strong><br>
+      سجّل الدخول في Game Center من إعدادات الجهاز، وستُرفع نتيجتك تلقائياً.</p>
+      <p><strong>كيف أوقف الإعلانات المخصّصة؟</strong><br>
+      الإعدادات ▸ الخصوصية والأمان ▸ التتبّع، وأوقف الإذن للتطبيق.</p>
+    </div>
+
+    <div class="links">
+      <a href="privacy/">سياسة الخصوصية</a>
+      <a href="mailto:mhalsuwaidii@gmail.com">مراسلة الدعم</a>
+    </div>
+
+    <footer>BrainIQ · Mohammed Alsuwaidi</footer>
   </div>
 </body>
 </html>
