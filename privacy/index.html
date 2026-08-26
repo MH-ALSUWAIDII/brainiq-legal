@@ -86,19 +86,12 @@ strong{font-weight:600}
 }
 .summary p:last-child{margin-bottom:0}
 
-.fill{
-  background:var(--code);border-bottom:2px solid var(--accent);
-  padding:1px 6px;border-radius:4px;font-weight:600;
+.path{
+  background:var(--code);padding:2px 8px;border-radius:6px;
+  font-size:0.94em;white-space:nowrap;
 }
+.num{font-variant-numeric:tabular-nums;direction:ltr;display:inline-block}
 
-.todo{
-  background:var(--warn-bg);border:1px solid var(--warn-line);
-  border-radius:14px;padding:18px 20px;margin:0 0 30px;
-  color:var(--warn-ink);font-size:15px;line-height:1.75;
-}
-.todo b{display:block;margin-bottom:8px;font-size:15.5px}
-.todo ul{margin:0;padding-inline-start:20px}
-.todo li{margin-bottom:5px}
 
 .en{direction:ltr;text-align:left}
 .en ul{padding-inline-start:22px}
@@ -114,22 +107,11 @@ footer{
 <body>
 <div class="wrap">
 
-  <!-- ⚠️ احذف هذا الصندوق بعد تعبئة الفراغات -->
-  <div class="todo">
-    <b>قبل النشر — عبّئ هذه الفراغات ثم احذف هذا الصندوق</b>
-    <ul>
-      <li>اسم المطوّر/الجهة كما هو في حساب Apple Developer</li>
-      <li>بريد التواصل</li>
-      <li>تاريخ السريان</li>
-      <li>لو أطلقت النسخة الأولى بدون إعلانات، احذف البندين 3 و4 من القسم العربي ومثلهما من الإنجليزي</li>
-    </ul>
-  </div>
-
   <div class="mark">Brain<span>IQ</span></div>
   <h1>سياسة الخصوصية</h1>
   <p class="meta">
-    تطبيق BrainIQ · تصدر عن <span class="fill">اسم المطوّر</span><br>
-    تاريخ السريان: <span class="fill">2026/00/00</span>
+    تطبيق BrainIQ · تصدر عن <b>Mohammed Alsuwaidi</b><br>
+    تاريخ السريان: <span class="num">2026/08/26</span>
   </p>
 
   <div class="summary">
@@ -167,7 +149,7 @@ footer{
   <h2><span class="n">4</span> التحكّم في تتبّع الإعلانات</h2>
   <p>على iOS، لا يمكن لأي تطبيق ربط نشاطك بمعرّفك الإعلاني إلا بعد موافقتك الصريحة عبر نافذة <strong>App Tracking Transparency</strong>. لك أن ترفض، ويظل التطبيق يعمل كاملاً — الإعلانات تصير غير مخصّصة فقط.</p>
   <p>تستطيع تغيير قرارك في أي وقت من:
-    <span class="fill">الإعدادات ▸ الخصوصية والأمان ▸ التتبّع</span></p>
+    <span class="path">الإعدادات ▸ الخصوصية والأمان ▸ التتبّع</span></p>
   <p>ولإيقاف تخصيص الإعلانات على مستوى النظام: الإعدادات ▸ الخصوصية والأمان ▸ إعلانات Apple.</p>
 
   <h2><span class="n">5</span> أين تُحفظ نتائج اختباراتك</h2>
@@ -186,7 +168,7 @@ footer{
   <p>قد نحدّث هذه السياسة عند إضافة ميزات جديدة. أي تغيير جوهري سيصاحبه تحديث لتاريخ السريان في أعلى الصفحة، وسنشير إليه في ملاحظات إصدار التطبيق.</p>
 
   <h2><span class="n">9</span> تواصل معنا</h2>
-  <p>لأي سؤال عن الخصوصية: <span class="fill">بريد التواصل</span></p>
+  <p>لأي سؤال عن الخصوصية: <a href="mailto:mhalsuwaidii@gmail.com">mhalsuwaidii@gmail.com</a></p>
 
   <hr class="hr">
 
@@ -195,8 +177,8 @@ footer{
 
     <h1>Privacy Policy</h1>
     <p class="meta">
-      BrainIQ for iPhone · published by <span class="fill">Developer name</span><br>
-      Effective date: <span class="fill">2026-00-00</span>
+      BrainIQ for iPhone · published by <b>Mohammed Alsuwaidi</b><br>
+      Effective date: <span class="num">26 August 2026</span>
     </p>
 
     <div class="summary">
@@ -233,7 +215,7 @@ footer{
 
     <h2><span class="n">4</span> Controlling ad tracking</h2>
     <p>On iOS, no app may link your activity to your advertising identifier without your explicit consent through the <strong>App Tracking Transparency</strong> prompt. You may decline, and the app keeps working in full — the ads simply become non-personalised.</p>
-    <p>You can change your choice at any time in <span class="fill">Settings ▸ Privacy &amp; Security ▸ Tracking</span>, and turn off system-level ad personalisation in Settings ▸ Privacy &amp; Security ▸ Apple Advertising.</p>
+    <p>You can change your choice at any time in <span class="path">Settings ▸ Privacy &amp; Security ▸ Tracking</span>, and turn off system-level ad personalisation in Settings ▸ Privacy &amp; Security ▸ Apple Advertising.</p>
 
     <h2><span class="n">5</span> Where your results are stored</h2>
     <p>Your score and answers stay in device memory for the duration of the session only. Nothing is written to a file and nothing is sent to a server. Closing the app or starting a new test erases the previous result permanently.</p>
@@ -251,11 +233,11 @@ footer{
     <p>We may update this policy as features are added. Any material change will be reflected in the effective date at the top of this page and noted in the app's release notes.</p>
 
     <h2><span class="n">9</span> Contact</h2>
-    <p>For any privacy question: <span class="fill">contact email</span></p>
+    <p>For any privacy question: <a href="mailto:mhalsuwaidii@gmail.com">mhalsuwaidii@gmail.com</a></p>
   </div>
 
   <footer>
-    BrainIQ · <span class="fill">اسم المطوّر</span> — آخر تحديث <span class="fill">2026/00/00</span>
+    BrainIQ · Mohammed Alsuwaidi — آخر تحديث <span class="num">2026/08/26</span>
   </footer>
 
 </div>
